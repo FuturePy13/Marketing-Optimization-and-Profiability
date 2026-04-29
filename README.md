@@ -1,119 +1,61 @@
-# Showz-Analytics
-Este proyecto simula un caso real en el que trabajo como analista de datos en Showz, una empresa de venta de entradas para eventos.
-El objetivo principal es optimizar los gastos de marketing mediante el análisis del comportamiento de los usuarios, las ventas y la rentabilidad de las distintas fuentes de adquisición.
+## Business Problem
+The company is investing in multiple marketing channels but lacks visibility into acquisition efficiency and customer profiability. High marketing spend combined with uneven performance across channels suggest potential inefficiences in budget allocation. The goal of this analysis is to evaluate key unit economics metrics(CAC, LTV, ROMI) to identify which channels drive profiability and optimize marketing investment.
 
-A lo largo del proyecto analizo datos reales de visitas, pedidos y costos de marketing para responder preguntas clave del negocio y apoyar la toma de decisiones del equipo de marketing.
+## Data Overview
+The dataset includes:
+- User activity (sessions, visits).
+- Orders and revenue
+- Marketing spend by acquisition source
+This allows analysis of customer behavior, conversion patterns and profiability across marketing channels.
 
-Objetivos del Análisis
+## Analysis
+This analysis was conducted using SQL and Python, focusing on:
+ - User activity trends
+ - Conversion Behavior
+ - Revenue per user and LifeTime Value (LTV)
+ - Customer Acquisiton Cost (CAC) by channel
+ - Return of Marketing Investment (ROMI)
 
-En este proyecto busco responder las siguientes preguntas estratégicas:
+## Key Insights
+- The platform shows strong growth, with daily users increasing from 450 to over 2000 sessions, indicating successful acquisition efforts.
+- Average Revenue per user is approximately $5, with an estimated LTV of $6.90, confirming recurring value beyond initial pruchase.
+- Marketing spend totals $329, with significant imbalance across channels.
+- Source 3 represents the highest spend ($141) but shows poor efficiency, indicating value destruction.
+- High performing channels include:
+    - Source 1: Extremely high ROMI (x109) with low CAC ($1.09) 
+    - Source 5: Strong Balance between CAC ($0.90) and ROMI (21.8).
+    - Source 4: Low CAC and solid returns
+- Some low.cost channels provide strong efficiency despite lower spend.
 
-Uso del servicio
+## Business Recomendations
+- Relocate budget toward high-performing channels (Sources 1, 5, 4 and 9) to maximize return of investment
+- Reduce or eliminate investment in inefficient channels like Source 3, which currently consumes a large portion of budget with poor retunrs.
+- Mantain and optimize mid-perfomming channels like Source 2 and 10 to improve efficiency.
+- Temporarily pause channels with insufficient data like Source 6 and 7 until performance can be validated.
+- Focus on scale channels with strong LTV / CAC ratios rather than those driving only volume.
 
-* ¿Cuántos usuarios activos hay por día, semana y mes?
+## Expected Impact 
+- Potential reduction in wasted marketing spend by 20-30%
+- Improved ROI through budget reallocation toward high-perfoming channels.
+- Increased overall marketing efficiency and profiability.
+- Better alignment between customer acquisition and long-term value (LTV)
 
-* ¿Cuántas sesiones se generan diariamente?
+## Dashboard & Visualizations
+Key metrics were visualized to support decision-making:
+- CAC by channel  
+- LTV and revenue per user  
+- ROMI by source  
+- User activity trends
+### CAC by Channel
 
-* ¿Cuál es la duración promedio de las sesiones?
 
-* ¿Con qué frecuencia regresan los usuarios?
+### LTV vs CAC
 
-Ventas
 
-* ¿Cuánto tiempo pasa desde la primera visita hasta la primera compra?
+### User Activity Trend
 
-* ¿Cuántos pedidos realiza un cliente en un período determinado?
 
-* ¿Cuál es el valor promedio de los pedidos?
-
-* ¿Cuánto ingreso genera cada cliente (LTV)?
-
-Marketing
-
-* ¿Cuánto dinero se invierte en marketing en total y por fuente?
-
-* ¿Cuál es el costo de adquisición de clientes (CAC) por fuente?
-
-* ¿Qué tan rentables son las campañas (ROMI)?
-
-* ¿Qué dispositivos y fuentes generan mejores resultados a lo largo del tiempo?
-
-El análisis se realiza con tres datasets:
-
-visits_log_us.csv
-
-Registros de visitas al sitio web (2017–2018):
-
-* Uid: identificador único del usuario
-
-* Device: dispositivo utilizado
-
-* Start Ts: inicio de la sesión
-
-* End Ts: fin de la sesión
-
-* Source Id: fuente de adquisición
-
-orders_log_us.csv
-
-Información sobre pedidos:
-
-* Uid: identificador del usuario
-
-* Buy Ts: fecha y hora del pedido
-
-* Revenue: ingresos generados
-
-costs_us.csv
-
-Gastos de marketing:
-
-* source_id: fuente de anuncios
-
-* dt: fecha
-
-* costs: gasto 
-
-Herramientas y Tecnologias
-
-* Python
-
-* Pandas y NumPy para manipulación de datos
-
-* Matplotlib y Seaborn para visualización
-
-* Jupyter Notebook para análisis y documentación
-
-Metodología
-
-1. Carga y limpieza de datos
-
-* Conversión de tipos de datos
-
-* Corrección de formatos de fecha
-
-* Preparación de tablas para análisis temporal y por cohortes
-
-2. Cálculo de métricas clave (KPIs)
-
-* DAU, WAU, MAU
-
-* Sesiones por usuario
-
-* Duración de sesiones
-
-* Conversión por cohortes
-
-* LTV, CAC y ROMI
-
-Análisis visual
-
-* Comparación por dispositivo y fuente de tráfico
-
-* Evolución de métricas a lo largo del tiempo
-
-Conclusiones y recomendaciones
-
-* Identificación de fuentes más rentables
-
-* Propuestas de optimización del presupuesto de marketing
+## Tools used
+- SQL (Data extraction and aggregation)
+- Python (Pandas, Matplotlib)
+- Data Visualization (Power BI)
