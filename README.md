@@ -41,10 +41,6 @@ This analysis was conducted using SQL and Python, focusing on:
 
 ## Dashboard & Visualizations
 Key metrics were visualized to support decision-making:
-- CAC by channel  
-- LTV and revenue per user  
-- ROMI by source  
-- User activity trends
 <img width="1310" height="723" alt="image" src="https://github.com/user-attachments/assets/be7fc22c-d2b5-48d4-a88a-1d3e84b13340" />
 
 
