@@ -17,22 +17,21 @@ This analysis was conducted using SQL and Python, focusing on:
  - Return of Marketing Investment (ROMI)
 
 ## Key Insights
-- The platform shows strong growth, with daily users increasing from 450 to over 2000 sessions, indicating successful acquisition efforts.
-- Average Revenue per user is approximately $5, with an estimated LTV of $6.90, confirming recurring value beyond initial pruchase.
-- Marketing spend totals $329, with significant imbalance across channels.
-- Source 3 represents the highest spend ($141) but shows poor efficiency, indicating value destruction.
-- High performing channels include:
-    - Source 1: Extremely high ROMI (x109) with low CAC ($1.09) 
-    - Source 5: Strong Balance between CAC ($0.90) and ROMI (21.8).
-    - Source 4: Low CAC and solid returns
-- Some low.cost channels provide strong efficiency despite lower spend.
+- The business is currently unprofitable, with a total profit of approximately -7M, driven by marketing costs exceeding generated revenue. 
+- Performance varies significantly across acquisition sources, highlighting inefficent budget allocation.
+- Source 1 is the most efficent and profitable channel, with the highest ROAS and strong positive profit contribution, making it the top-performing source.
+- Source 2,4 and 5 show stable and positive performance, with healthy profiability and acceptable efficiency levels.
+- Source 3 is the main driver of losses, with  ROAS below 1 and significantly negative profit, indicating clear value destruction.
+- Conversion Rate differs across sources, suggestions variations in traffic quality and funnel effectiveness.
+- Some sources contribute minimal impact (low volumne and low profit), indicating limited strategic value.
 
 ## Business Recomendations
-- Relocate budget toward high-performing channels (Sources 1, 5, 4 and 9) to maximize return of investment
-- Reduce or eliminate investment in inefficient channels like Source 3, which currently consumes a large portion of budget with poor retunrs.
-- Mantain and optimize mid-perfomming channels like Source 2 and 10 to improve efficiency.
-- Temporarily pause channels with insufficient data like Source 6 and 7 until performance can be validated.
-- Focus on scale channels with strong LTV / CAC ratios rather than those driving only volume.
+- Rellocate marketing budget from underperforming sources (especially source 3), to high-performing and efficient channels like 1, 2, 4 and 5.
+- Investigate the root causes of poor perfomance in Source 3 (Low Conversion Rate, High Acquisition Cost, Low-quality Traffic).
+- Scale channels with strong ROAS and consistenly profiability to maximize return of investment.
+- Optimize mid-performing sources to improve efficiency, focusing on increasing conversion rate and reducing Acquisition costs.
+- Consider reducing or eliminating low-impact sources that do not significantly contribute to revenue or growth.
+- Continously monitor conversion rates and funnel performance to identify opportunities for improving traffic quality and overall eficiency.
 
 ## Expected Impact 
 - Potential reduction in wasted marketing spend by 20-30%
