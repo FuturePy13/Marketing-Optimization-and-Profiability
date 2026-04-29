@@ -45,13 +45,7 @@ Key metrics were visualized to support decision-making:
 - LTV and revenue per user  
 - ROMI by source  
 - User activity trends
-### CAC by Channel
-
-
-### LTV vs CAC
-
-
-### User Activity Trend
+<img width="1310" height="723" alt="image" src="https://github.com/user-attachments/assets/be7fc22c-d2b5-48d4-a88a-1d3e84b13340" />
 
 
 ## Tools used
